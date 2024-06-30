@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script language="javasript" type="text/javascript">
+function down()
+{
+ document.entry.b1.value="Key Down";
+}
+function up()
+{
+ document.entry.b1.value="Key Up";
+}
+function press()
+{
+ document.entry.b2.value="Key Pressed";
+}
+</script>
+</head>
+<body background="2.jpeg"> 
+ <form action="" method="post" name="entry">
+<input type="button" name="b1" value="Click" onkeydown="down()" 
+onkeyup="up()"> <br><br>
+Enter Key:<input type="text" name="cname" onkeypress="press()"><br>
+<input type="button" name="b2" value="Key">
+ </form>
+</body>
+</html>

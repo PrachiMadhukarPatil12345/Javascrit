@@ -1,0 +1,21 @@
+<html>
+<head>
+<script language="Javascript">MyBanners=new 
+Array('1.jpeg','2.jpeg','3.jpeg','4.jpeg')
+banner=0
+function ShowBanners()
+{ if (document.images)
+{ banner++
+if (banner==MyBanners.length) {
+banner=0}
+document.ChangeBanner.src=MyBanners[banner]
+setTimeout("ShowBanners()",5000)
+}
+}
+</script>
+<body onload="ShowBanners()">
+<center>
+<img src="sky.jpg" width="600" height="600" name="ChangeBanner"/>
+</center>
+</body>
+</html>

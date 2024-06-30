@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>JavaScript Image Rollovers</title>
+<script>
+//<!-- Hide Script
+	function move_in(img_name,img_src)
+     {
+	document[img_name].src=img_src;
+	}
+
+	function move_out(img_name,img_src)
+    {
+	document[img_name].src=img_src;
+	}
+//End Hide Script-->
+</script>
+</head>
+<body bgcolor="yellow">
+  <a href="gallery.html"
+   OnMouseOver="move_in('image1','7.jpeg')"
+   OnMouseOut="move_out('image1','8.jpeg')">
+
+  <img src="6.jpeg"
+   alt="Move your mouse over here!" name="image1">
+
+  </a>
+</body>
+</html>
